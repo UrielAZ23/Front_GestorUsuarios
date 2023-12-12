@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('C:/Users/sagomez/POKEMON1/src/assets/images/login.jpg');
+    background-image: url('./images/login.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -11,9 +11,9 @@ import { userservice } from '../../services/userservice';
 export class HomeComponent {
 
   constructor(private _userservices:userservice){
-    this._userservices.getUser().subscribe(response =>{
-      console.log(response)
-    })
+    // this._userservices.getUser().subscribe(response =>{
+    //   console.log(response)
+    // })
   }
   ngOnInit(){
     

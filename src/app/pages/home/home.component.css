@@ -1,5 +1,4 @@
-
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +7,8 @@
 
 body {
     height: 100vh;
+    padding: 0px;
+    margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +16,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 100%;
+}
+
+.parrafo {
+    font-size: 125%;
+    color: #000000;
 }
 
 .container-form {
@@ -23,7 +34,7 @@ body {
     height: 90vh;
     display: flex;
     justify-content: space-around;
-    transition:  all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 .welcome-back {
@@ -52,7 +63,7 @@ body {
     font-size: .9rem;
     margin-top: 2rem;
     transition: all .3s ease-in;
-    color: #ffffff;
+    color: white;
 }
 
 .message button:hover {
@@ -79,21 +90,26 @@ body {
     margin: auto;
 }
 
-.border-icon {
+.border-icon, .border-icon2 {
     height: 20px;
     width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
-    border: solid thin rgb(11, 1, 37);
+    /* border: solid thin rgb(11, 1, 37); */
     border-radius: 50%;
     font-size: 1.5rem;
     transition: all .3s ease-in;
 }
 
 .border-icon:hover {
-    background-color: rgb(11, 1, 37);
+    background-color: rgb(72, 0, 255);
+    cursor: pointer;
+}
+
+.border-icon2:hover {
+    background-color: rgb(254, 0, 0);
     cursor: pointer;
 }
 
@@ -102,11 +118,11 @@ body {
 }
 
 .form-login a {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  border-bottom: .5px solid;
-  border-bottom-color: #ffffff;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    border-bottom: .5px solid;
+    border-bottom-color: #ffffff;
 }
 
 .formulario input {
@@ -138,3 +154,25 @@ body {
     color: #ffffff;
 }
 
+.titulo {
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+    color: #000000;
+}
+
+a[routerLink] {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+a[routerLink]:hover {
+    text-decoration: underline solid 1px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}

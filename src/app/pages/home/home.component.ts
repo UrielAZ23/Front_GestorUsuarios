@@ -15,10 +15,10 @@ export class HomeComponent {
   constructor(private _userservices:userservice){
 
   }
-  ngOnInit(){
-    this._userservices.getUser().subscribe(response =>{
-      console.log(response)
-    })
-  }
+  // ngOnInit(){
+  //   this._userservices.getUser().subscribe(response =>{
+  //     console.log(response)
+  //   })
+  // }
 }
 

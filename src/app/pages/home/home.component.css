@@ -1,5 +1,4 @@
-
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +7,8 @@
 
 body {
     height: 100vh;
+    padding: 0px;
+    margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,14 +16,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
+    color: white;
+    background-repeat: no-repeat;
 }
 
-p{
-    color: aqua;
+p {
+    color: white;
+    font-size: 100%;
 }
 
-.parrafo{
+.parrafo {
     font-size: 125%;
     color: #000000;
 }
@@ -32,7 +35,7 @@ p{
     height: 90vh;
     display: flex;
     justify-content: space-around;
-    transition:  all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 .welcome-back {
@@ -61,7 +64,7 @@ p{
     font-size: .9rem;
     margin-top: 2rem;
     transition: all .3s ease-in;
-    color: #ffffff;
+    color: white;
 }
 
 .message button:hover {
@@ -111,11 +114,11 @@ p{
 }
 
 .form-login a {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  border-bottom: .5px solid;
-  border-bottom-color: #ffffff;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    border-bottom: .5px solid;
+    border-bottom-color: #ffffff;
 }
 
 .formulario input {
@@ -147,10 +150,9 @@ p{
     color: #ffffff;
 }
 
-.titulo{
+.titulo {
     font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
     color: #000000;
 }
-
-
-

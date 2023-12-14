@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLinkWithHref } from '@angular/router';
+import { userservice } from '../../services/userservice';
 
 @Component({
   selector: 'app-home',
@@ -11,4 +12,13 @@ import { RouterLinkWithHref } from '@angular/router';
 })
 export class HomeComponent {
 
+  constructor(private _userservices:userservice){
+
+  }
+  ngOnInit(){
+    this._userservices.getUser().subscribe(response =>{
+      console.log(response)
+    })
+  }
 }
+

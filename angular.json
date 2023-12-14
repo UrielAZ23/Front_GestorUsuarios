@@ -3,44 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "todoapp": {
+    "v2": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:class": {
-          "skipTests": true
-        },
-        "@schematics/angular:component": {
-          "skipTests": true
-        },
-        "@schematics/angular:directive": {
-          "skipTests": true
-        },
-        "@schematics/angular:guard": {
-          "skipTests": true
-        },
-        "@schematics/angular:interceptor": {
-          "skipTests": true
-        },
-        "@schematics/angular:pipe": {
-          "skipTests": true
-        },
-        "@schematics/angular:resolver": {
-          "skipTests": true
-        },
-        "@schematics/angular:service": {
-          "skipTests": true
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/todoapp",
+            "outputPath": "dist/v2",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -50,11 +25,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "./node_modules/primeicons/primeicons.css",
-              "./node_modules/primeng/resources/themes/tailwind-light/theme.css",
-              "./node_modules/primeng/resources/primeng.min.css",
-              "./node_modules/primeflex/primeflex.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -75,9 +46,12 @@
               "outputHashing": "all"
             },
             "development": {
+              "buildOptimizer": false,
               "optimization": false,
+              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "production"
@@ -86,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "todoapp:build:production"
+              "browserTarget": "v2:build:production"
             },
             "development": {
-              "buildTarget": "todoapp:build:development"
+              "browserTarget": "v2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -97,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "todoapp:build"
+            "browserTarget": "v2:build"
           }
         },
         "test": {
@@ -120,8 +94,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "b377bbe8-7f40-4d40-b8a2-8edf5676d8b3"
   }
 }

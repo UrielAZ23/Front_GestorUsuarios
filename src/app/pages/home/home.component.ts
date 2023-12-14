@@ -5,20 +5,18 @@ import { userservice } from '../../services/userservice';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule, RouterLinkWithHref],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
 
   constructor(private _userservices:userservice){
-
-  }
-  ngOnInit(){
     this._userservices.getUser().subscribe(response =>{
       console.log(response)
     })
+  }
+  ngOnInit(){
+    
   }
 }
 

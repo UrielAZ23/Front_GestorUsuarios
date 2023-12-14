@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
+import { Routes,RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { LinkComponent } from './pages/link/link.component';
 import { IniciarsesionComponent } from './pages/iniciarsesion/iniciarsesion.component';
@@ -7,7 +8,7 @@ import { PasswordfComponent } from './pages/passwordf/passwordf.component';
 
 
 
-export const routes: Routes = [
+const routes: Routes = [
 {
     path: '',
     component: HomeComponent
@@ -27,3 +28,6 @@ export const routes: Routes = [
 
 
 ];
+
+export const appRoutingProviders:any[]=[];
+export const routing:ModuleWithProviders<any>=RouterModule.forRoot(routes)

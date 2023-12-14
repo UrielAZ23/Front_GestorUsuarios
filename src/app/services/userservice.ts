@@ -10,7 +10,7 @@ export class userservice{
             this.url=Global.url
         }
     getUser():Observable<any>{
-        var user='all'
+        var user='api/user/all'
         return this._http.get(this.url+user)
     }
 }

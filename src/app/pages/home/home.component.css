@@ -18,6 +18,15 @@ body {
     color: #ffffff;
 }
 
+p{
+    color: aqua;
+}
+
+.parrafo{
+    font-size: 125%;
+    color: #000000;
+}
+
 .container-form {
     width: 90%;
     height: 90vh;
@@ -137,4 +146,11 @@ body {
     cursor: pointer;
     color: #ffffff;
 }
+
+.titulo{
+    font-size: 150%;
+    color: #000000;
+}
+
+
 

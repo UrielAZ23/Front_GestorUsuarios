@@ -155,3 +155,19 @@ p {
     font-weight: bold;
     color: #000000;
 }
+
+a[routerLink] {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+a[routerLink]:hover {
+    text-decoration: underline solid 1px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
